@@ -25,7 +25,19 @@ namespace Module16
 
         public int Division(int a, int b)
         {
-            return a / b;
+            try 
+            {
+                return a / b;
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return 0;
         }
     }
 }

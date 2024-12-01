@@ -116,9 +116,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Module16\Module16.csproj">
+    <ProjectReference Include="..\Module16\Calculator.csproj">
       <Project>{f25f63ee-3461-480a-aaed-dd672e8da370}</Project>
-      <Name>Module16</Name>
+      <Name>Calculator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -38,6 +38,12 @@ namespace Module16
             Assert.That(calculator.Division(20, 10), Is.EqualTo(2));
         }
 
+        [Test]
+        public void DivisionDontThrowsExeptions() // проверка на отработку нуля в знаменателе
+        {
+            var unit = new Calculator();
+            Assert.DoesNotThrow(() => unit.Division(1, 0));
+        }
     }
 
 }
